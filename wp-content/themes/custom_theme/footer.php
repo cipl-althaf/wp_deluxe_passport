@@ -3,25 +3,25 @@
                 <div class="footer-main">
                     <div class="footer-brand">
                         <a href="#" class="footer-logo">
-                            <img src="./images/footer-logo.png" alt="Deluxe Passport Express">
+                            <img src="<?php echo get_template_directory_uri();?>/images/footer-logo.png" alt="Deluxe Passport Express">
                         </a>
 
                         <address class="footer-contact">
                             <a href="#" class="footer-contact-item">
                                 <span class="footer-contact-icon">
-                                    <img src="./images/location-icon.svg" alt="">
+                                    <img src="<?php echo get_template_directory_uri();?>/images/location-icon.svg" alt="">
                                 </span>
                                 <span>Deluxe Passport Express 57 Lee Ave, Brooklyn,<br>NY 11211</span>
                             </a>
                             <a href="tel:7183875441" class="footer-contact-item">
                                 <span class="footer-contact-icon">
-                                    <img src="./images/footer-call.svg" alt="">
+                                    <img src="<?php echo get_template_directory_uri();?>/images/footer-call.svg" alt="">
                                 </span>
                                 <span>718-387-5441</span>
                             </a>
                             <a href="mailto:info@deluxepassportexpress.com" class="footer-contact-item">
                                 <span class="footer-contact-icon">
-                                    <img src="./images/footer-sms.svg" alt="">
+                                    <img src="<?php echo get_template_directory_uri();?>/images/footer-sms.svg" alt="">
                                 </span>
                                 <span>info@deluxepassportexpress.com</span>
                             </a>
@@ -64,11 +64,11 @@
                 <div class="footer-bottom">
                     <p>© 2004 - 2026 Deluxe Passport Express, Brooklyn, New York</p>
                     <div class="footer-socials">
-                        <a href="#" aria-label="Facebook"><img src="./images/fb.png" alt=""></a>
-                        <a href="#" aria-label="YouTube"><img src="./images/youtub.png" alt=""></a>
-                        <a href="#" aria-label="Instagram"><img src="./images/instagram.png" alt=""></a>
-                        <a href="#" aria-label="TikTok"><img src="./images/music.png" alt=""></a>
-                        <a href="#" aria-label="Notifications"><img src="./images/notification.png" alt=""></a>
+                        <a href="#" aria-label="Facebook"><img src="<?php echo get_template_directory_uri();?>/images/fb.png" alt=""></a>
+                        <a href="#" aria-label="YouTube"><img src="<?php echo get_template_directory_uri();?>/images/youtub.png" alt=""></a>
+                        <a href="#" aria-label="Instagram"><img src="<?php echo get_template_directory_uri();?>/images/instagram.png" alt=""></a>
+                        <a href="#" aria-label="TikTok"><img src="<?php echo get_template_directory_uri();?>/images/music.png" alt=""></a>
+                        <a href="#" aria-label="Notifications"><img src="<?php echo get_template_directory_uri();?>/images/notification.png" alt=""></a>
                     </div>
                 </div>
             </div>

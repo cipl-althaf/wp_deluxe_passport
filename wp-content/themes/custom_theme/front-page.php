@@ -15,18 +15,18 @@
                     </p>
                     <div class="banner-actions">
                         <a href="#" class="banner-btn">
-                            <img src="./images/passport-icon.svg" alt="">
+                            <img src="<?php echo get_template_directory_uri();?>/images/passport-icon.svg" alt="">
                             Apply Passport
                         </a>
                         <a href="#" class="banner-btn">
-                            <img src="./images/apply-visa.svg" alt="">
+                            <img src="<?php echo get_template_directory_uri();?>/images/apply-visa.svg" alt="">
                             Apply VISAS
                         </a>
                     </div>
                 </div>
 
                 <div class="hero-pass">
-                    <img src="./images/newo.png" alt="">
+                    <img src="<?php echo get_template_directory_uri();?>/images/newo.png" alt="">
                 </div>
             </div>
 
@@ -34,49 +34,49 @@
                 <div class="services-inner">
                     <a href="#" class="service-item">
                         <span class="service-icon">
-                            <img src="./images/book-saved.svg" alt="">
+                            <img src="<?php echo get_template_directory_uri();?>/images/book-saved.svg" alt="">
                         </span>
                         <span class="service-label">New Passport</span>
                     </a>
                     <a href="#" class="service-item">
                         <span class="service-icon">
-                            <img src="./images/edit-2.svg" alt="">
+                            <img src="<?php echo get_template_directory_uri();?>/images/edit-2.svg" alt="">
                         </span>
                         <span class="service-label">Name Change</span>
                     </a>
                     <a href="#" class="service-item">
                         <span class="service-icon">
-                            <img src="./images/child-emoji.svg" alt="">
+                            <img src="<?php echo get_template_directory_uri();?>/images/child-emoji.svg" alt="">
                         </span>
                         <span class="service-label">Child Passport</span>
                     </a>
                     <a href="#" class="service-item">
                         <span class="service-icon">
-                            <img src="./images/search-normal.svg" alt="">
+                            <img src="<?php echo get_template_directory_uri();?>/images/search-normal.svg" alt="">
                         </span>
                         <span class="service-label">Lost Passport</span>
                     </a>
                     <a href="#" class="service-item">
                         <span class="service-icon">
-                            <img src="./images/calendar.svg" alt="">
+                            <img src="<?php echo get_template_directory_uri();?>/images/calendar.svg" alt="">
                         </span>
                         <span class="service-label">Extend Validity</span>
                     </a>
                     <a href="#" class="service-item">
                         <span class="service-icon">
-                            <img src="./images/refresh-2.svg" alt="">
+                            <img src="<?php echo get_template_directory_uri();?>/images/refresh-2.svg" alt="">
                         </span>
                         <span class="service-label">Passport Renewal</span>
                     </a>
                     <a href="#" class="service-item">
                         <span class="service-icon">
-                            <img src="./images/document-text.svg" alt="">
+                            <img src="<?php echo get_template_directory_uri();?>/images/document-text.svg" alt="">
                         </span>
                         <span class="service-label">Adding Visa Pages</span>
                     </a>
                     <a href="#" class="service-item">
                         <span class="service-icon">
-                            <img src="./images/cards.svg" alt="">
+                            <img src="<?php echo get_template_directory_uri();?>/images/cards.svg" alt="">
                         </span>
                         <span class="service-label">Passport Card</span>
                     </a>
@@ -106,12 +106,12 @@
                             Passport and travel visa needs.</p>
                         <a href="#" class="know-more">
                             Know More
-                            <img src="./images/arrow-right.svg" alt="">
+                            <img src="<?php echo get_template_directory_uri();?>/images/arrow-right.svg" alt="">
                         </a>
                     </div>
 
                     <div class="news-card news-card-image">
-                        <img src="./images/mobilea-app.png" alt="Travel planning">
+                        <img src="<?php echo get_template_directory_uri();?>/images/mobilea-app.png" alt="Travel planning">
                     </div>
 
                     <div class="news-card news-card-text">
@@ -120,12 +120,12 @@
                             world.</p>
                         <a href="#" class="know-more">
                             Know More
-                            <img src="./images/arrow-right.svg" alt="">
+                            <img src="<?php echo get_template_directory_uri();?>/images/arrow-right.svg" alt="">
                         </a>
                     </div>
 
                     <div class="news-card news-card-image">
-                        <img src="./images/passport.png" alt="US Passport">
+                        <img src="<?php echo get_template_directory_uri();?>/images/passport.png" alt="US Passport">
                     </div>
 
                     <div class="news-card news-card-text">
@@ -134,12 +134,12 @@
                             around the world!!</p>
                         <a href="#" class="know-more">
                             Know More
-                            <img src="./images/arrow-right.svg" alt="">
+                            <img src="<?php echo get_template_directory_uri();?>/images/arrow-right.svg" alt="">
                         </a>
                     </div>
 
                     <div class="news-card news-card-image">
-                        <img src="./images/visa.png" alt="Travel documents">
+                        <img src="<?php echo get_template_directory_uri();?>/images/visa.png" alt="Travel documents">
                     </div>
                 </div>
             </div>
@@ -162,11 +162,11 @@
                         <div class="testimonial-controls">
                             <button class="testimonial-arrow testimonial-prev" type="button"
                                 aria-label="Previous testimonial">
-                                <img src="./images/slider-arrow-right.svg" alt="">
+                                <img src="<?php echo get_template_directory_uri();?>/images/slider-arrow-right.svg" alt="">
                             </button>
                             <button class="testimonial-arrow testimonial-next" type="button"
                                 aria-label="Next testimonial">
-                                <img src="./images/slider-arrow-left.svg" alt="">
+                                <img src="<?php echo get_template_directory_uri();?>/images/slider-arrow-left.svg" alt="">
                             </button>
                         </div>
                     </div>
@@ -176,7 +176,7 @@
                     <div class="testimonial-track">
                         <article class="testimonial-card">
                             <div class="testimonial-person">
-                                <img src="./images/profile-pic.png" alt="Sophia Bennett">
+                                <img src="<?php echo get_template_directory_uri();?>/images/profile-pic.png" alt="Sophia Bennett">
                                 <div>
                                     <h3>Sophia Bennett</h3>
                                     <p>Marketing Director</p>
@@ -186,13 +186,13 @@
                                 entire application process quickly and smoothly.”</blockquote>
                             <div class="testimonial-rating">
                                 <span>4.5</span>
-                                <img src="./images/star.svg" alt="Rating star">
+                                <img src="<?php echo get_template_directory_uri();?>/images/star.svg" alt="Rating star">
                             </div>
                         </article>
 
                         <article class="testimonial-card">
                             <div class="testimonial-person">
-                                <img src="./images/Liam.png" alt="Liam Carter">
+                                <img src="<?php echo get_template_directory_uri();?>/images/Liam.png" alt="Liam Carter">
                                 <div>
                                     <h3>Liam Carter</h3>
                                     <p>Chief Technology Officer</p>
@@ -202,13 +202,13 @@
                                 whole experience stress-free.”</blockquote>
                             <div class="testimonial-rating">
                                 <span>4.5</span>
-                                <img src="./images/star.svg" alt="Rating star">
+                                <img src="<?php echo get_template_directory_uri();?>/images/star.svg" alt="Rating star">
                             </div>
                         </article>
 
                         <article class="testimonial-card">
                             <div class="testimonial-person">
-                                <img src="./images/profile-pic.png" alt="Samavis">
+                                <img src="<?php echo get_template_directory_uri();?>/images/profile-pic.png" alt="Samavis">
                                 <div>
                                     <h3>Samavis</h3>
                                     <p>Product Manager</p>
@@ -218,13 +218,13 @@
                                 delivers exactly what they promise.”</blockquote>
                             <div class="testimonial-rating">
                                 <span>4.5</span>
-                                <img src="./images/star.svg" alt="Rating star">
+                                <img src="<?php echo get_template_directory_uri();?>/images/star.svg" alt="Rating star">
                             </div>
                         </article>
 
                         <article class="testimonial-card">
                             <div class="testimonial-person">
-                                <img src="./images/profile-pic.png" alt="James Wilson">
+                                <img src="<?php echo get_template_directory_uri();?>/images/profile-pic.png" alt="James Wilson">
                                 <div>
                                     <h3>James Wilson</h3>
                                     <p>Marketing Director</p>
@@ -234,13 +234,13 @@
                                 and I would definitely recommend them.”</blockquote>
                             <div class="testimonial-rating">
                                 <span>4.5</span>
-                                <img src="./images/star.svg" alt="Rating star">
+                                <img src="<?php echo get_template_directory_uri();?>/images/star.svg" alt="Rating star">
                             </div>
                         </article>
 
                         <article class="testimonial-card">
                             <div class="testimonial-person">
-                                <img src="./images/profile-pic.png" alt="Emma Taylor">
+                                <img src="<?php echo get_template_directory_uri();?>/images/profile-pic.png" alt="Emma Taylor">
                                 <div>
                                     <h3>Emma Taylor</h3>
                                     <p>Operations Manager</p>
@@ -250,7 +250,7 @@
                                 and professionally.”</blockquote>
                             <div class="testimonial-rating">
                                 <span>4.5</span>
-                                <img src="./images/star.svg" alt="Rating star">
+                                <img src="<?php echo get_template_directory_uri();?>/images/star.svg" alt="Rating star">
                             </div>
                         </article>
                     </div>
@@ -273,8 +273,8 @@
                     <div class="faq-item">
                         <button class="faq-question" type="button" aria-expanded="false">
                             <span>What documents are required for a new passport?</span>
-                            <img class="faq-icon faq-plus" src="./images/faq-plus.svg" alt="">
-                            <img class="faq-icon faq-minus" src="./images/faq-minus.svg" alt="">
+                            <img class="faq-icon faq-plus" src="<?php echo get_template_directory_uri();?>/images/faq-plus.svg" alt="">
+                            <img class="faq-icon faq-minus" src="<?php echo get_template_directory_uri();?>/images/faq-minus.svg" alt="">
                         </button>
                         <div class="faq-answer">
                             <div class="faq-answer-inner">
@@ -288,8 +288,8 @@
                     <div class="faq-item is-open">
                         <button class="faq-question" type="button" aria-expanded="true">
                             <span>How long does it take to process a passport?</span>
-                            <img class="faq-icon faq-plus" src="./images/faq-plus.svg" alt="">
-                            <img class="faq-icon faq-minus" src="./images/faq-minus.svg" alt="">
+                            <img class="faq-icon faq-plus" src="<?php echo get_template_directory_uri();?>/images/faq-plus.svg" alt="">
+                            <img class="faq-icon faq-minus" src="<?php echo get_template_directory_uri();?>/images/faq-minus.svg" alt="">
                         </button>
                         <div class="faq-answer">
                             <div class="faq-answer-inner">
@@ -302,8 +302,8 @@
                     <div class="faq-item">
                         <button class="faq-question" type="button" aria-expanded="false">
                             <span>Can I apply for a child passport through your service?</span>
-                            <img class="faq-icon faq-plus" src="./images/faq-plus.svg" alt="">
-                            <img class="faq-icon faq-minus" src="./images/faq-minus.svg" alt="">
+                            <img class="faq-icon faq-plus" src="<?php echo get_template_directory_uri();?>/images/faq-plus.svg" alt="">
+                            <img class="faq-icon faq-minus" src="<?php echo get_template_directory_uri();?>/images/faq-minus.svg" alt="">
                         </button>
                         <div class="faq-answer">
                             <div class="faq-answer-inner">
@@ -316,8 +316,8 @@
                     <div class="faq-item">
                         <button class="faq-question" type="button" aria-expanded="false">
                             <span>Do you help with visa applications?</span>
-                            <img class="faq-icon faq-plus" src="./images/faq-plus.svg" alt="">
-                            <img class="faq-icon faq-minus" src="./images/faq-minus.svg" alt="">
+                            <img class="faq-icon faq-plus" src="<?php echo get_template_directory_uri();?>/images/faq-plus.svg" alt="">
+                            <img class="faq-icon faq-minus" src="<?php echo get_template_directory_uri();?>/images/faq-minus.svg" alt="">
                         </button>
                         <div class="faq-answer">
                             <div class="faq-answer-inner">
@@ -330,8 +330,8 @@
                     <div class="faq-item">
                         <button class="faq-question" type="button" aria-expanded="false">
                             <span>Can you assist with passport renewal?</span>
-                            <img class="faq-icon faq-plus" src="./images/faq-plus.svg" alt="">
-                            <img class="faq-icon faq-minus" src="./images/faq-minus.svg" alt="">
+                            <img class="faq-icon faq-plus" src="<?php echo get_template_directory_uri();?>/images/faq-plus.svg" alt="">
+                            <img class="faq-icon faq-minus" src="<?php echo get_template_directory_uri();?>/images/faq-minus.svg" alt="">
                         </button>
                         <div class="faq-answer">
                             <div class="faq-answer-inner">
@@ -344,8 +344,8 @@
                     <div class="faq-item">
                         <button class="faq-question" type="button" aria-expanded="false">
                             <span>What should I do if my passport is lost or stolen?</span>
-                            <img class="faq-icon faq-plus" src="./images/faq-plus.svg" alt="">
-                            <img class="faq-icon faq-minus" src="./images/faq-minus.svg" alt="">
+                            <img class="faq-icon faq-plus" src="<?php echo get_template_directory_uri();?>/images/faq-plus.svg" alt="">
+                            <img class="faq-icon faq-minus" src="<?php echo get_template_directory_uri();?>/images/faq-minus.svg" alt="">
                         </button>
                         <div class="faq-answer">
                             <div class="faq-answer-inner">
