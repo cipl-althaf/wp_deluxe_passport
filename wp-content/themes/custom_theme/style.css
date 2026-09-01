@@ -18,6 +18,105 @@ Author: Althaf Hussain J
     font-family: "Google Sans", sans-serif;
 }
 
+
+#gallery-div{
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    width:1265px;
+    position:absolute;
+    margin-top:180px;
+    margin-left:40px;
+    padding:15px;
+    border-radius:15px;
+
+}
+#testimonials{
+    position:absolute;
+    margin-top:1020px;
+    margin-left:40px;
+    width:1265px;
+    padding:15px;
+
+}
+
+#box-main-container{
+    display:flex;
+    
+    justify-content:center;
+    padding:10px;
+    gap:20px;
+    
+    
+}
+
+#box1{
+    
+    border-radius:20px;
+    height:280px;
+    width:400px;
+}
+
+#box2{
+    
+    border-radius:20px;
+    height:280px;
+    width:400px;
+
+    
+}
+#box3{
+    border-radius:20px;
+    height:280px;
+    width:400px;
+    
+}
+#box4{
+    border-radius:20px;
+    height:280px;
+    width:400px;
+    
+}
+#box5{
+    border-radius:20px;
+    height:280px;
+    width:400px;
+    
+}
+#box6{
+    border-radius:20px;
+    height:280px;
+    width:400px;
+    
+}
+
+#footer-main-div{
+   background-color:black;
+    position:absolute;
+    margin-top:1020px;
+   height:auto;
+   width:100%;
+   padding:30px;
+   display:flex;
+   justify-content:space-between;
+   
+
+}
+
+#quick-links-menu{
+    color: #888888;
+}
+#footer-menu-items-div{
+    display:flex;gap:30px;
+}
+.footer-menu-items{
+
+    line-height:35px;
+    color: #888888;
+}
+#footer-contacts-list{
+    border:1px solid red;
+}
+
 .main-section h1,
 .main-section h2,
 .main-section h3,
