@@ -37,9 +37,10 @@
         
 
     </div>
+
     <div style="">
         <h1 id="quick-links-menu">Quick Links</h1>
-        <hr>
+        
         <br>
         <div id="footer-menu-items-div">
             <div>
@@ -85,9 +86,24 @@
         
     </div>
     
+    
 </div>
+<div id="footer-main-div2">
+     
+    <div id="footer-main-div2-content">
+        <div>
+            © 2004 - 2026 Deluxe Passport Express, Brooklyn, New York
+        </div>
+        <div>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/fb.png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/youtub.png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/instagram.png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/music.png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/notification.png" alt="">
+        </div>
 
-
+    </div>
+</div>
 </div>
 
  <script src="./Script.js"></script>

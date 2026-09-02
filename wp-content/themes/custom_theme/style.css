@@ -16,15 +16,18 @@ Author: Althaf Hussain J
     padding: 0;
     box-sizing: border-box;
     font-family: "Google Sans", sans-serif;
+    
 }
 
+/* Custom CSS Start */
 
 #gallery-div{
     /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    
     width:1265px;
     position:absolute;
-    margin-top:180px;
+    margin-top:200px;
     margin-left:40px;
     padding:15px;
     border-radius:15px;
@@ -90,23 +93,44 @@ Author: Althaf Hussain J
 }
 
 #footer-main-div{
-   background-color:black;
+    /* background-color:transparent; */
+    
+    background-color:black;
     position:absolute;
-    margin-top:1020px;
+    margin-top:2450px;
    height:auto;
    width:100%;
    padding:30px;
    display:flex;
    justify-content:space-between;
-   
+   /* display:none; */
+
+}
+#footer-main-div2{
+    margin-top:2750px;
+    background-color:black;
+    position:absolute;
+    width:100%;
+    height:auto;
+    color: #888888;
+    border-top:1px solid #888888;
+}
+
+#footer-main-div2-content{
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    
 
 }
 
 #quick-links-menu{
     color: #888888;
+    border-bottom:1px solid #888888;
 }
 #footer-menu-items-div{
-    display:flex;gap:30px;
+    display:flex;
+    gap:30px;
 }
 .footer-menu-items{
 
@@ -116,6 +140,341 @@ Author: Althaf Hussain J
 #footer-contacts-list{
     border:1px solid red;
 }
+#left-right-button-div{
+    display:flex;
+    justify-content:end;
+    gap:10px;
+    padding:10px;
+}
+#left-arrow-button{
+    background-color:gainsboro;
+    border-radius:50%;
+    height:45px;
+    width:45px;
+    padding:8px 14px;
+    font-size:large;
+   
+
+}
+#right-arrow-button{
+    background-color:black;    
+    border-radius:50%;
+    height:45px;
+    width:45px;
+    padding:8px 14px;
+    font-size:large;
+    
+}
+
+#left-arrow-button:hover, #right-arrow-button:hover{
+    margin-top:-2px;    
+}
+
+#cards-main-div{
+    display:flex;
+    gap:15px;
+    width:1300px;
+}
+
+#card1{
+    background: #f6f6f6;
+    border:1px solid #f6f6f6;
+    height:300px;
+    width:380px;
+    border-radius:25px;
+    padding:20px;
+
+}
+
+#card1-body{
+    display:flex;
+    flex-direction:column;
+    gap:35px;
+}
+
+#card1-title{
+    display:flex;
+    gap:10px;
+}
+#card1-name{
+    display:flex;
+    gap:3px;
+    flex-direction: column;
+}
+#card1-content{
+    /* margin-top:10px; */
+}
+#card1-rating{
+    /* margin-top:40px; */
+}
+#card2{
+    background: #f6f6f6;
+    border:1px solid #f6f6f6;
+    height:300px;
+    width:380px;
+    border-radius:25px;
+    padding:20px;
+}
+#card2-body{
+    display:flex;
+    flex-direction:column;
+    gap:35px;
+}
+#card2-title{
+    display:flex;
+    gap:10px;
+}
+#card2-name{
+    display:flex;
+    gap:3px;
+    flex-direction:column;
+}
+#card2-content{
+    /* margin-top:10px; */
+}
+#card2-rating{
+    /* margin-top:20px; */
+}
+#card3{
+    background: #f6f6f6;
+    border:1px solid #f6f6f6;
+    height:300px;
+    width:380px;
+    border-radius:25px;
+    padding:20px;
+}
+
+#card3-body{
+    display:flex;
+    flex-direction:column;
+    gap:35px;
+}
+#card3-title{
+    display:flex;
+    gap:10px;
+}
+#card3-name{
+    display:flex;
+    flex-direction:column;
+    gap:3px;
+    
+}
+
+#card3-content{
+    /* margin-top:10px; */
+}
+
+#card3-rating{
+    /* margin-top:40px; */
+}
+
+#card4{
+    background: #f6f6f6;
+    border:1px solid #f6f6f6;
+    height:300px;
+    width:380px;
+    border-radius:25px;
+    padding:20px;
+}
+
+#card4-body{
+    display:flex;
+    flex-direction:column;
+    gap:35px;
+}
+
+#card4-title{
+    display:flex;
+    gap:10px;
+}
+#card4-name{
+    display:flex;
+    flex-direction:column;
+    gap:3px;
+    
+}
+#card4-content{
+    /* margin-top:10px; */
+}
+#card4-rating{
+    /* margin-top:40px; */
+}
+
+.star{
+    color:gold;
+}
+
+#faq-main-div{
+    
+    position: absolute;
+    margin-top:1650px;
+    padding:40px;
+    width:100%;
+    
+    
+}
+#faq-main-body{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius:20px;
+    height:700px;   
+    padding:30px;
+    
+
+}
+#faq-header{
+    text-align:center;
+}
+#faq-content{
+    display:flex;
+    flex-direction:column;
+    justify-content:start;
+    align-items:center;
+    margin-top:10px;
+    gap:20px;
+    
+}
+#faq-paragraph{
+    text-align:center;
+    line-height:30px;
+}
+#questions-main-div{
+    
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    justify-content:space-evenly;
+    margin-top:20px;
+    
+
+}
+
+#questions-main-div > div{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding:20px;
+    border-radius:10px;
+
+}
+
+#question-inner-div1{
+    padding-top:15px;
+    font-size:15px;
+    display:none;
+    width:650px;
+    line-height:30px;
+
+}
+
+
+
+#question-inner-div2{
+    padding-top:15px;
+    font-size:15px;
+    display:none;
+    width:650px;
+    line-height:30px;
+
+}
+#question-inner-div3{
+    padding-top:15px;
+    font-size:15px;
+    display:none;
+    width:650px;
+    line-height:30px;
+
+}
+#question-inner-div4{
+    padding-top:15px;
+    font-size:15px;
+    display:none;
+    width:650px;
+    line-height:30px;
+
+}
+#question-inner-div5{
+    padding-top:15px;
+    font-size:15px;
+    display:none;
+    width:650px;
+    line-height:30px;
+
+}
+
+
+
+#question-outer2-div1{
+    display:flex;
+    justify-content:space-between;
+}
+
+#question-outer2-div2{
+    display:flex;
+    justify-content:space-between;
+}
+
+#question-outer2-div3{
+    display:flex;
+    justify-content:space-between;
+}
+
+#question-outer2-div4{
+    display:flex;
+    justify-content:space-between;
+}
+
+#question-outer2-div5{
+    display:flex;
+    justify-content:space-between;
+}
+
+
+#dash1, #dash2, #dash3, #dash4, #dash5{
+    display:none;
+}
+
+#question-outer-div1:hover,
+#question-outer-div2:hover, 
+#question-outer-div3:hover,
+#question-outer-div4:hover,
+#question-outer-div5:hover{
+    cursor:pointer;
+}
+
+/* #question-outer-div1:hover{
+    #question-inner-div1{
+        
+        display:block;
+        
+        
+    }
+}
+
+#question-outer-div2:hover{
+    #question-inner-div2{
+        display:block;
+    }
+}
+
+#question-outer-div3:hover{
+    #question-inner-div3{
+        display:block;
+    }
+}
+
+#question-outer-div4:hover{
+    #question-inner-div4{
+        display:block;
+    }
+}
+
+#question-outer-div5:hover{
+    #question-inner-div5{
+        display:block;
+    }
+} */
+
+
+/* Custom CSS End */
+
 
 .main-section h1,
 .main-section h2,
