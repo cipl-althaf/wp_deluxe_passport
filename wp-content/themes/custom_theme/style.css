@@ -21,30 +21,52 @@ Author: Althaf Hussain J
 
 /* Custom CSS Start */
 
+#new-passport, #name-change
+, #child-passport, #lost-passport,
+#extend-validity, #passport-renewal
+, #adding-visa-pages, #passport-card
+{
+    
+    text-align:center;
+    margin-top:0px;
+    transition: ease-in-out .2s;
+    
+    
+}
+
+
+#new-passport:hover, #name-change:hover,
+#child-passport:hover, #lost-passport:hover,
+#extend-validity:hover, #passport-renewal:hover,
+#adding-visa-pages:hover, #passport-card:hover{
+    cursor:pointer;
+    margin-top:-5px;
+}
+
 #gallery-div{
     /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    
-    width:1265px;
+    width: 100%;
+    /* width:1265px; */
     position:absolute;
     margin-top:200px;
-    margin-left:40px;
+    /* margin-left:40px; */
     padding:15px;
     border-radius:15px;
 
 }
 #testimonials{
     position:absolute;
-    margin-top:1020px;
-    margin-left:40px;
-    width:1265px;
+    margin-top:1080px;
+    /* margin-left:40px; */
+    /* width:1265px; */
+    width: 100%;
     padding:15px;
 
 }
 
 #box-main-container{
     display:flex;
-    
     justify-content:center;
     padding:10px;
     gap:20px;
@@ -94,49 +116,66 @@ Author: Althaf Hussain J
 
 #footer-main-div{
     /* background-color:transparent; */
-    
     background-color:black;
     position:absolute;
-    margin-top:2450px;
-   height:auto;
+    margin-top:2500px;
+    font-size:12px;
+   /* height:auto; */
    width:100%;
-   padding:30px;
+   /* padding:30px; */
    display:flex;
-   justify-content:space-between;
+   
+   justify-content:space-evenly;
    /* display:none; */
 
 }
 #footer-main-div2{
-    margin-top:2750px;
+    margin-top:2760px;
     background-color:black;
     position:absolute;
+    /* width:800px; */
+    font-size:12px;
     width:100%;
-    height:auto;
+    /* height:auto; */
     color: #888888;
-    border-top:1px solid #888888;
+    border-top:1px solid #333333;
+    
 }
 
 #footer-main-div2-content{
     padding:20px;
     display:flex;
     justify-content:space-between;
-    
-
 }
 
 #quick-links-menu{
     color: #888888;
-    border-bottom:1px solid #888888;
+    border-bottom:1px solid #333333;
 }
+
 #footer-menu-items-div{
     display:flex;
-    gap:30px;
+    /* gap:30px; */
 }
 .footer-menu-items{
 
-    line-height:35px;
+    line-height:30px;
     color: #888888;
 }
+
+#fb-img, #youtube-img, #insta-img,
+#music-img, #notification-img{
+    margin-top:0;
+    transition: ease-in-out .3s;
+}
+
+#fb-img:hover, #youtube-img:hover
+, #insta-img:hover, #music-img:hover,
+#notification-img:hover{
+    
+    margin-top:-10px;
+}
+
 #footer-contacts-list{
     border:1px solid red;
 }
@@ -146,6 +185,7 @@ Author: Althaf Hussain J
     gap:10px;
     padding:10px;
 }
+
 #left-arrow-button{
     background-color:gainsboro;
     border-radius:50%;
@@ -173,14 +213,16 @@ Author: Althaf Hussain J
 #cards-main-div{
     display:flex;
     gap:15px;
-    width:1300px;
+    /* width:1300px; */
+    width:100%;
 }
 
 #card1{
     background: #f6f6f6;
     border:1px solid #f6f6f6;
     height:300px;
-    width:380px;
+    /* width:380px; */
+    width:auto;
     border-radius:25px;
     padding:20px;
 
@@ -189,7 +231,7 @@ Author: Althaf Hussain J
 #card1-body{
     display:flex;
     flex-direction:column;
-    gap:35px;
+    gap:34px;
 }
 
 #card1-title{
@@ -211,14 +253,15 @@ Author: Althaf Hussain J
     background: #f6f6f6;
     border:1px solid #f6f6f6;
     height:300px;
-    width:380px;
+    /* width:380px; */
+    width:auto;
     border-radius:25px;
     padding:20px;
 }
 #card2-body{
     display:flex;
     flex-direction:column;
-    gap:35px;
+    gap:10px;
 }
 #card2-title{
     display:flex;
@@ -235,11 +278,13 @@ Author: Althaf Hussain J
 #card2-rating{
     /* margin-top:20px; */
 }
+
 #card3{
     background: #f6f6f6;
     border:1px solid #f6f6f6;
     height:300px;
-    width:380px;
+    /* width:380px; */
+    width:auto;
     border-radius:25px;
     padding:20px;
 }
@@ -247,7 +292,7 @@ Author: Althaf Hussain J
 #card3-body{
     display:flex;
     flex-direction:column;
-    gap:35px;
+    gap:20px;
 }
 #card3-title{
     display:flex;
@@ -272,7 +317,8 @@ Author: Althaf Hussain J
     background: #f6f6f6;
     border:1px solid #f6f6f6;
     height:300px;
-    width:380px;
+    /* width:380px; */
+    width:auto;
     border-radius:25px;
     padding:20px;
 }
@@ -280,7 +326,7 @@ Author: Althaf Hussain J
 #card4-body{
     display:flex;
     flex-direction:column;
-    gap:35px;
+    gap:20px;
 }
 
 #card4-title{
@@ -316,7 +362,7 @@ Author: Althaf Hussain J
 #faq-main-body{
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     border-radius:20px;
-    height:700px;   
+    height:780px;   
     padding:30px;
     
 
@@ -437,6 +483,10 @@ Author: Althaf Hussain J
 #question-outer-div4:hover,
 #question-outer-div5:hover{
     cursor:pointer;
+}
+
+.question-outer-div-bg-color{
+    background-color:#E6E6E6;
 }
 
 /* #question-outer-div1:hover{
