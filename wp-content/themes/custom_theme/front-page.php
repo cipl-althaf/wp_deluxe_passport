@@ -44,34 +44,56 @@
             <ul style="display:flex;justify-content:space-evenly;padding:40px;">
                 <a href="#" id="new-passport">
                     <li>
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/book-saved.svg" alt="logo">
+                            <?php $icon = get_field('service_menu1')['icon']['url'];
+                            ?>
+
+                            <?php if($icon): ?>
+                                <img src="<?php echo esc_url($icon); ?>" alt="">
+                            <?php else:?>
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/book-saved.svg" alt="logo">
+                            <?php endif; ?>
                             <br>
                             <br>
                             <label for="">
-                                <?php the_field('service_menu1')?>
+                                <?php echo get_field('service_menu1')['name']; ?>
                                 <!-- NEW PASSPORT -->
                             </label>
                     </li>
                 </a>
                 <a href="#" id="name-change">
                     <li>
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/edit-2.svg" alt="logo">
+                            <?php $icon = get_field('service_menu2')['icon']['url'];
+                            ?>
+
+                            <?php if($icon): ?>
+                                <img src="<?php echo esc_url($icon); ?>" alt="">
+                            <?php else:?>
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/edit-2.svg" alt="logo">
+                            <?php endif; ?>
+
                             <br>
                             <br>
                             <label for="">
                                 <!-- NAME CHANGE -->
-                                 <?php the_field('service_menu2');?>
+                                 <?php echo get_field('service_menu2')['name']; ?>
                             </label>
                     </li>
                 </a>
                 <a href="#" id="child-passport">
 
                     <li>
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/child-emoji.svg" alt="logo">
+                        <?php $icon = get_field('service_menu3')['icon']['url'];
+                            ?>
+
+                            <?php if($icon): ?>
+                                <img src="<?php echo esc_url($icon); ?>" alt="">
+                            <?php else:?>
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/child-emoji.svg" alt="logo">
+                            <?php endif; ?>
                             <br>
                             <br>
                             <label for="">
-                                <?php the_field('service_menu3')?>
+                                <?php echo get_field('service_menu3')['name']; ?>
                                 <!-- CHILD PASSPORT -->
                             </label>
                     </li>
@@ -79,11 +101,18 @@
                 <a href="#" id="lost-passport">
 
                     <li>
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/search-normal.svg" alt="logo">
+                        <?php $icon = get_field('service_menu4')['icon']['url'];
+                            ?>
+
+                            <?php if($icon): ?>
+                                <img src="<?php echo esc_url($icon); ?>" alt="">
+                            <?php else:?>
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/search-normal.svg" alt="logo">
+                            <?php endif; ?>
                             <br>
                             <br>
                             <label for="">
-                                <?php the_field('service_menu4'); ?>
+                                <?php echo get_field('service_menu4')['name']; ?>
                                 <!-- LOST PASSPORT -->
                             </label>
                     </li>
@@ -91,11 +120,19 @@
                 <a href="#" id="extend-validity">
 
                     <li>
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/calendar.svg" alt="logo">
+                            <?php $icon = get_field('service_menu5')['icon']['url'];
+                            ?>
+
+                            <?php if($icon): ?>
+                                <img src="<?php echo esc_url($icon); ?>" alt="">
+                            <?php else:?>
+                                
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/calendar.svg" alt="logo">
+                            <?php endif; ?>
                             <br>
                             <br>
                             <label for="">
-                                <?php the_field('service_menu5')?>
+                                <?php echo get_field('service_menu5')['name']; ?>
                                 <!-- EXTEND VALIDITY -->
 
                             </label>
@@ -104,11 +141,19 @@
                 <a href="#" id="passport-renewal">
 
                     <li>
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/refresh-2.svg" alt="logo">
+                        <?php $icon = get_field('service_menu6')['icon']['url'];
+                            ?>
+
+                            <?php if($icon): ?>
+                                <img src="<?php echo esc_url($icon); ?>" alt="">
+                            <?php else:?>
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/refresh-2.svg" alt="logo">
+                            <?php endif; ?>
+
                             <br>
                             <br>
                             <label for="">
-                                <?php the_field('service_menu6')?>
+                                <?php echo get_field('service_menu6')['name']; ?>
                             <!-- PASSPORT RENEWAL -->
 
                             </label>
@@ -117,11 +162,18 @@
                 <a href="#" id="adding-visa-pages">
 
                     <li>
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/document-text.svg" alt="logo">
+                        <?php $icon = get_field('service_menu7')['icon']['url'];
+                            ?>
+
+                            <?php if($icon): ?>
+                                <img src="<?php echo esc_url($icon); ?>" alt="">
+                            <?php else:?>
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/document-text.svg" alt="logo">
+                            <?php endif; ?>
                         <br>
                         <br>
                         <label for="">
-                            <?php the_field('service_menu7')?>
+                            <?php echo get_field('service_menu7')['name']; ?>
                             <!-- ADDING VISA PAGES -->
 
                         </label>
@@ -129,11 +181,18 @@
                 </a>
                 <a href="#" id="passport-card">
                     <li>
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/cards.svg" alt="logo">
+                        <?php $icon = get_field('service_menu8')['icon']['url'];
+                            ?>
+
+                            <?php if($icon): ?>
+                                <img src="<?php echo esc_url($icon); ?>" alt="">
+                            <?php else:?>
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/cards.svg" alt="logo">    
+                            <?php endif; ?>
                             <br>
                             <br>
                             <label for="">
-                                <?php the_field('service_menu8')?>
+                                <?php echo get_field('service_menu8')['name'];?>
                                 <!-- PASSPORT CARD -->
                             </label>
                     </li>
@@ -182,25 +241,50 @@
                     <a href="" class="know-more">
                         <?php echo get_field('card1')['button_text']; ?>
                         <!-- Know More -->
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/arrow-right.svg" alt="">
+                         <?php 
+                            $icon  = get_field('card1')['icon']['url'];
+                            
+                         ?>
+                         <?php if($icon): ?>
+
+                            <img src="<?php echo esc_url($icon) ?>" alt="">
+                          <?php else: ?> 
+
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/arrow-right.svg" alt="">
+
+                            <?php endif; ?>
                     </a>
                 </div>
                 <div id="box2" class="news-card news-card-image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/mobilea-app.png" alt="travel planning">
+                    <?php
+                        $image = get_field('card2')['url'];
+                    ?>
+                    <?php if($image):?>
+                        <img src="<?php echo esc_url($image); ?>" alt="">
+                    <?php else:?>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/mobilea-app.png" alt="travel planning">
+                    <?php endif;?>
                 </div>
                 <div id="box3" class="news-card news-card-text">
                     <h3>
-                        <?php  echo get_field('card2')['title']; ?>
+                        <?php  echo get_field('card3')['title']; ?>
                         <!-- Passport News -->
                     </h3>
                     <p>
-                        <?php echo get_field('card2')['description']; ?>
+                        <?php echo get_field('card3')['description']; ?>
                         <!-- Stay updated with the latest passport news, alerts, and important information from around the world. -->
                     </p>
                     <a href="" class="know-more">
-                        <?php echo get_field('card2')['button_text'] ?>
+                        <?php echo get_field('card3')['button_text'] ?>
                         <!-- Know More -->
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/arrow-right.svg" alt="">
+                         <?php 
+                            $icon = get_field('card3')['icon']['url'];
+                         ?>
+                         <?php if($icon): ?>
+                            <img src="<?php echo esc_url($icon); ?>" alt="">
+                        <?php else: ?>      
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/arrow-right.svg" alt="">
+                        <?php endif; ?>
                     </a>
                 </div>
                 
@@ -208,21 +292,47 @@
             <br>
             <div id="box-main-container">
                 <div id="box4" class="news-card news-card-image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/passport.png" alt="US passport">
+                    <?php 
+                        $image  = get_field('card4')['url'];
+                    
+                    ?>
+                    <?php if($image): ?>
+                    <img src="<?php echo esc_url($image); ?>" alt="">
+                    <?php else:?>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/passport.png" alt="US passport">
+                    <?php endif; ?>
                 </div>
                 <div id="box5" class="news-card news-card-text">
                     <h3>
-                        <?php get_field('card3')['title']?>
+                        <?php echo get_field('card5')['title']; ?>
                         <!-- Travel News -->
                     </h3>
-                    <p>Get the latest travel news, articles, alerts, guides, special offers, and information from around the world!!</p>
+                    <p>
+                        <?php echo get_field('card5')['description']; ?>
+                        <!-- Get the latest travel news, articles, alerts, guides, special offers, and information from around the world!! -->
+                    </p>
                     <a href="" class="know-more">
-                        Know More
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/arrow-right.svg" alt="">
+                        <?php echo get_field('card5')['button_text'] ?>
+                        <!-- Know More -->
+                         <?php 
+                            $icon  = get_field('card5')['icon']['url'];
+                         ?>
+                         <?php if($icon): ?>
+                            <img src="<?php echo esc_url($icon); ?>" alt="">
+                         <?php else: ?>
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/arrow-right.svg" alt="">
+                        <?php endif; ?>
                     </a>
                 </div>
                 <div id="box6" class="news-card news-card-image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/visa.png" alt="">
+                    <?php
+                        $image = get_field('card6')['url'];
+                    ?>
+                    <?php if($image): ?>
+                        <img src="<?php echo esc_url($image); ?>" alt="">
+                    <?php else: ?>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/visa.png" alt="">
+                    <?php endif; ?>
                 </div>
                 
             </div>
@@ -235,19 +345,27 @@
     <div id="testimonials" style="">
         <div>
             <span class="testimonial-badge">
-                <span class="badge-dot"></span>Testimonials
+                <span class="badge-dot"></span>
+                <?php echo get_field('testimonials')['badge_title']; ?>
+                <!-- Testimonials -->
             </span>
 
         </div>
         <div style="display:flex;justify-content:space-evenly;gap:430px;margin-top:20px;">
                     <div style="width:600px">
                         
-            <h1>Trusted by
+            <h1>
+<?php echo get_field('testimonials')['title']?>
+                <!-- Trusted by
                 
-            Our Clients</h1>
+            Our Clients -->
+        </h1>
                     </div>
             <div style="line-height:30px;">
-            <p>We are proud to be trusted by our clients who rely on our commitment to quality and consistency. Our focus on delivering reliable solutions and maintaining strong relationships has helped us build long-term partnerships.</p>
+            <p>
+                <?php echo get_field('testimonials')['description']; ?>
+                <!-- We are proud to be trusted by our clients who rely on our commitment to quality and consistency. Our focus on delivering reliable solutions and maintaining strong relationships has helped us build long-term partnerships. -->
+            </p>
 
             <div id="left-right-button-div">
         
@@ -356,17 +474,23 @@
             <div id="faq-header">
                     <div id="faq-badge">
                             <span class="faq-badge">
-                            <span class="badge-dot"></span> F.A.Q
+                            <span class="badge-dot"></span>
+                            <?php echo get_field('faq')['badge_title']; ?>
+                             <!-- F.A.Q -->
                             </span>
                     </div>
             </div>
                 <div id="faq-content">
                     <div id="faq-title">
-                            <h1>Comman Questions</h1>
+                            <h1>
+                                <?php echo get_field('faq')['title']; ?>
+                                <!-- Comman Questions -->
+                            </h1>
                     </div>
                     <div id="faq-paragraph">
-                        <p>Browse through our frequently asked questions to gain clarity on our services, process, and policies.</p>
-                        <p> We aim to provide you with a smooth and transparent experience.</p>
+                        <p><?php echo get_field('faq')['description']; ?></p>
+                        <!-- <p>Browse through our frequently asked questions to gain clarity on our services, process, and policies.</p>
+                        <p> We aim to provide you with a smooth and transparent experience.</p> -->
                     </div>
                     
                 </div>
