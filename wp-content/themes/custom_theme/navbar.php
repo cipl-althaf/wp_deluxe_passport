@@ -5,32 +5,35 @@
                $comp_logo = get_field('company_logo');
             ?>
             <?php if($comp_logo): ?>
-            <img src="<?php echo $comp_logo['url']; ?>" alt="" width="100" height="100" style="margin-top:-35px;">
+                <a href="">
+                    <img src="<?php echo $comp_logo['url']; ?>" alt="" width="100" height="100" style="margin-top:-35px;">
+                </a>
             <?php endif;?>
             <!-- <img src="<?php echo get_template_directory_uri(); ?>/images/Deluxe-logo.png" alt="company logo"> -->
         </li>
         <li class="nav-item has-dropdown">
-            <a href=""><?php the_field('nav_item1'); ?>
+            <a href=""><?php echo get_field('nav_items')['nav_item1'] ?>
                 <img src="<?php echo get_template_directory_uri(); ?>/images/arrow-down.svg" alt="" class="nav-arrow">
              
             </a>
         </li>
         <li class="nav-item has-dropdown">
-            <a href=""><?php the_field('nav_item2') ?>
+            <a href=""><?php echo  get_field('nav_items')['nav_item2'] ?>
                 <img src="<?php echo get_template_directory_uri(); ?>/images/arrow-down.svg" alt="" class="nav-arrow">
             </a>
         </li>
         <li class="nav-item has-dropdown">
-            <a href=""><?php the_field('nav_item3') ?></a>
+            <a href=""><?php echo get_field('nav_items')['nav_item3'] ?></a>
         </li>
         <li class="nav-item has-dropdown">
-            <a href=""><?php the_field('nav_item4') ?></a>
+            <a href=""><?php echo get_field('nav_items')['nav_item4'] ?></a>
         </li>
         <li class="nav-item has-dropdown">
-            <a href=""><?php the_field('nav_item5') ?></a>
+           <a href="<?php echo get_field('nav_items')['nav_item5_link'] ?>"><?php echo get_field('nav_items')['nav_item5'] ?></a>
+           
         </li>
         <li class="nav-item has-dropdown">
-            <a href=""><?php the_field('nav_item6') ?></a>
+            <a href=""><?php echo get_field('nav_items')['nav_item6'] ?></a>
         </li>
         <li>
             <a href=""><span class=""><img src=" <?php echo get_template_directory_uri(); ?>/images/call-logo.svg" alt="">

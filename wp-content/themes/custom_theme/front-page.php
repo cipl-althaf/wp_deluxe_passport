@@ -227,20 +227,31 @@
             
         
             <div id="box-main-container">
+
+           <?php
+           
+           $query = new WP_Query(
+            ['post_type'=>'post',
+            'posts_per_page'=>3]
+           );
+           while($query->have_posts()){
+            $query->the_post();
+           ?>
                 <div id="box1" class="news-card news-card-text">
                     <h3>
-                        <?php echo get_field('card1')['title']; ?>
+                        <?php the_title() ?>
+                         
                         <!-- Online Application -->
 
                     </h3>
                     <p>
 
-                    <?php echo get_field('card1')['description']; ?>
+                    <?php the_content(); ?>
                         <!-- Extensive step-by-step instructions, information and application forms for all your US Passport and travel visa needs. -->
-                    </p>
-                    <a href="" class="know-more">
+                        </p>
+                    <a href="<?php the_permalink(); ?>" class="know-more">
                         <?php echo get_field('card1')['button_text']; ?>
-                        <!-- Know More -->
+                        Know More
                          <?php 
                             $icon  = get_field('card1')['icon']['url'];
                             
@@ -255,89 +266,10 @@
                             <?php endif; ?>
                     </a>
                 </div>
-                <div id="box2" class="news-card news-card-image">
-                    <?php
-                        $image = get_field('card2')['url'];
-                    ?>
-                    <?php if($image):?>
-                        <img src="<?php echo esc_url($image); ?>" alt="">
-                    <?php else:?>
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/mobilea-app.png" alt="travel planning">
-                    <?php endif;?>
-                </div>
-                <div id="box3" class="news-card news-card-text">
-                    <h3>
-                        <?php  echo get_field('card3')['title']; ?>
-                        <!-- Passport News -->
-                    </h3>
-                    <p>
-                        <?php echo get_field('card3')['description']; ?>
-                        <!-- Stay updated with the latest passport news, alerts, and important information from around the world. -->
-                    </p>
-                    <a href="" class="know-more">
-                        <?php echo get_field('card3')['button_text'] ?>
-                        <!-- Know More -->
-                         <?php 
-                            $icon = get_field('card3')['icon']['url'];
-                         ?>
-                         <?php if($icon): ?>
-                            <img src="<?php echo esc_url($icon); ?>" alt="">
-                        <?php else: ?>      
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/arrow-right.svg" alt="">
-                        <?php endif; ?>
-                    </a>
-                </div>
-                
-            </div>
-            <br>
-            <div id="box-main-container">
-                <div id="box4" class="news-card news-card-image">
-                    <?php 
-                        $image  = get_field('card4')['url'];
-                    
-                    ?>
-                    <?php if($image): ?>
-                    <img src="<?php echo esc_url($image); ?>" alt="">
-                    <?php else:?>
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/passport.png" alt="US passport">
-                    <?php endif; ?>
-                </div>
-                <div id="box5" class="news-card news-card-text">
-                    <h3>
-                        <?php echo get_field('card5')['title']; ?>
-                        <!-- Travel News -->
-                    </h3>
-                    <p>
-                        <?php echo get_field('card5')['description']; ?>
-                        <!-- Get the latest travel news, articles, alerts, guides, special offers, and information from around the world!! -->
-                    </p>
-                    <a href="" class="know-more">
-                        <?php echo get_field('card5')['button_text'] ?>
-                        <!-- Know More -->
-                         <?php 
-                            $icon  = get_field('card5')['icon']['url'];
-                         ?>
-                         <?php if($icon): ?>
-                            <img src="<?php echo esc_url($icon); ?>" alt="">
-                         <?php else: ?>
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/arrow-right.svg" alt="">
-                        <?php endif; ?>
-                    </a>
-                </div>
-                <div id="box6" class="news-card news-card-image">
-                    <?php
-                        $image = get_field('card6')['url'];
-                    ?>
-                    <?php if($image): ?>
-                        <img src="<?php echo esc_url($image); ?>" alt="">
-                    <?php else: ?>
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/visa.png" alt="">
-                    <?php endif; ?>
-                </div>
-                
-            </div>
-
-
+<?php }?>
+    </div>
+    <br>
+    
             
         </div>
 

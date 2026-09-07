@@ -90,40 +90,40 @@
                     <div>
     
                         <ul class="footer-menu-items">
-                            <li><a href="">US Passport</a></li>
-                            <li><a href="">Passport Renewal</a></li>
-                            <li><a href="">US Passport Application</a></li>
+                            <li><a href=""><?php echo get_field('footer_navigation1')['nav_item1']; ?></a></li>
+                            <li><a href=""><?php echo get_field('footer_navigation1')['nav_item2']; ?></a></li>
+                            <li><a href=""><?php echo get_field('footer_navigation1')['nav_item3']; ?></a></li>
                         </ul>
                     </div>
                     <div>
                         <ul class="footer-menu-items">
-                                <li><a href="">Passport Renewal Application</a></li>
-                                <li><a href="">China Visa</a></li>
-                                <li><a href="">Child Passport Renewal</a></li>
-                                <li><a href="">Stolen Passport</a></li>
-                                <li><a href="">Emergency Passport</a></li>
+                                <li><a href=""><?php echo get_field('footer_navigation2')['nav_item1']; ?></a></li>
+                                <li><a href=""><?php echo get_field('footer_navigation2')['nav_item2']; ?></a></li>
+                                <li><a href=""><?php echo get_field('footer_navigation2')['nav_item3']; ?></a></li>
+                                <li><a href=""><?php echo get_field('footer_navigation2')['nav_item4']; ?></a></li>
+                                <li><a href=""><?php echo get_field('footer_navigation2')['nav_item5']; ?></a></li>
                         </ul>
                     </div>
                     <div>
     
                             <ul class="footer-menu-items">
-                                <li><a href="">US Passport Services</a></li>
-                                <li><a href="">Fast Passport</a></li>
-                                <li><a href="">Renew US Passport</a></li>
-                                <li><a href="">American Passport</a></li>
-                                <li><a href="">American Passport</a></li>
-                                <li><a href="">Emergency Passport Renewal</a></li>
+                                <li><a href=""><?php echo get_field('footer_navigation3')['nav_item1']; ?></a></li>
+                                <li><a href=""><?php echo get_field('footer_navigation3')['nav_item2']; ?></a></li>
+                                <li><a href=""><?php echo get_field('footer_navigation3')['nav_item3']; ?></a></li>
+                                <li><a href=""><?php echo get_field('footer_navigation3')['nav_item4']; ?></a></li>
+                                <li><a href=""><?php echo get_field('footer_navigation3')['nav_item5']; ?></a></li>
+                                <li><a href=""><?php echo get_field('footer_navigation3')['nav_item6']; ?></a></li>
                                 
                             </ul>
                     </div>
     
                     <div>
                         <ul class="footer-menu-items">
-                            <li><a href="">USA Passport</a></li>
-                            <li><a href="">US Passport Renewal</a></li>
-                            <li><a href="">Quick Passport</a></li>
-                            <li><a href="">Rush Passport</a></li>
-                            <li><a href="">Express Passport</a></li>
+                            <li><a href=""><?php echo get_field('footer_navigation4')['nav_item1']; ?></a></li>
+                            <li><a href=""><?php echo get_field('footer_navigation4')['nav_item2']; ?></a></li>
+                            <li><a href=""><?php echo get_field('footer_navigation4')['nav_item3']; ?></a></li>
+                            <li><a href=""><?php echo get_field('footer_navigation4')['nav_item4']; ?></a></li>
+                            <li><a href=""><?php echo get_field('footer_navigation4')['nav_item5']; ?></a></li>
                         </ul>
                     </div>
                 </div>
@@ -136,7 +136,7 @@
         <div id="footer-main-div2">
             
             <div id="footer-main-div2-content">
-                <div style="color:red">
+                <div>
                     <?php echo get_field('copy_right_section')['copy_right_text']; ?>
                     <!-- © 2004 - 2026 Deluxe Passport Express, Brooklyn, New York -->
                 </div>
@@ -189,6 +189,6 @@
 
 
  <script src="./Script.js"></script>
-</div>
+<!-- </div> -->
 </body>
 </html>

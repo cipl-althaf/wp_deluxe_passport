@@ -46,11 +46,12 @@ Author: Althaf Hussain J
 #gallery-div{
     /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    width: 100%;
+    /* width: 100%; */
+    width:auto;
     /* width:1265px; */
     position:absolute;
     margin-top:200px;
-    /* margin-left:40px; */
+    margin-left:33px;
     padding:15px;
     border-radius:15px;
 
@@ -58,9 +59,9 @@ Author: Althaf Hussain J
 #testimonials{
     position:absolute;
     margin-top:1080px;
-    /* margin-left:40px; */
-    /* width:1265px; */
-    width: 100%;
+    margin-left:40px;
+    width:1265px;
+    /* width: 100%; */
     padding:15px;
 
 }
