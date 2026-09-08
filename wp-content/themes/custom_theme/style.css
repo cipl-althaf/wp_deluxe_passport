@@ -61,16 +61,25 @@ Author: Althaf Hussain J
     margin-top:1080px;
     margin-left:40px;
     width:1265px;
+    
     /* width: 100%; */
     padding:15px;
 
 }
 
 #box-main-container{
-    display:flex;
+
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:20px;
+    height:600px;
+    overflow-y: scroll;
+    
+    
+    /* display:flex;
     justify-content:center;
     padding:10px;
-    gap:20px;
+    gap:20px; */
     
     
 }
@@ -80,6 +89,9 @@ Author: Althaf Hussain J
     border-radius:20px;
     height:280px;
     width:400px;
+    background-repeat:no-repeat;
+    background-size: cover;
+    
 }
 
 #box2{
@@ -119,7 +131,7 @@ Author: Althaf Hussain J
     /* background-color:transparent; */
     background-color:black;
     position:absolute;
-    margin-top:2500px;
+    margin-top:2700px;
     font-size:12px;
    /* height:auto; */
    width:100%;
@@ -131,7 +143,7 @@ Author: Althaf Hussain J
 
 }
 #footer-main-div2{
-    margin-top:2760px;
+    margin-top:2970px;
     background-color:black;
     position:absolute;
     /* width:800px; */
@@ -212,9 +224,15 @@ Author: Althaf Hussain J
 }
 
 #cards-main-div{
-    display:flex;
+
+
+    
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
     gap:15px;
     /* width:1300px; */
+    overflow-x:scroll;
+    height:500px;
     width:100%;
 }
 
@@ -232,7 +250,8 @@ Author: Althaf Hussain J
 #card1-body{
     display:flex;
     flex-direction:column;
-    gap:34px;
+    gap:30px;
+    
 }
 
 #card1-title{
@@ -354,7 +373,7 @@ Author: Althaf Hussain J
 #faq-main-div{
     
     position: absolute;
-    margin-top:1650px;
+    margin-top:1800px;
     padding:40px;
     width:100%;
     
@@ -744,7 +763,7 @@ button {
 
 /* Banner Section */
 .banner-section {
-    position: relative;
+    position: relative; 
     width: 100%;
     background: url("./images/abc.jpg") right center / cover no-repeat;
     padding-bottom: 70px;

@@ -21,4 +21,15 @@ function custom_theme_register_menus()
     );
 }
 
+
+function deluxe_passport_register_menus() {
+
+    register_nav_menus([
+        'main-menu' => 'Main Menu'
+    ]);
+
+}
+
+add_action('after_setup_theme', 'deluxe_passport_register_menus');
+
 add_action('after_setup_theme', 'custom_theme_register_menus');

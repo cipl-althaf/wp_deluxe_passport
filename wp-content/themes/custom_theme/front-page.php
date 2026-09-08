@@ -1,6 +1,10 @@
 <?php get_header(); ?>
-
+<?php $banner_section_image = get_field('banner_background_image')['url'];?>
+<?php if($banner_section_image):?>
+    <div class="banner-section" style="background-image:url(<?php echo $banner_section_image; ?>)">
+ <?php else:?>      
     <div class="banner-section">
+<?php endif;?>
                 <div class="banner-inner">
                     <div class="banner-content">
                         <span class="banner-badge">
@@ -20,21 +24,30 @@
                             -->
                         </p>
                         <div class="banner-actions">
-                            <a href="#" class="banner-btn">
+                            <a href="<?php the_field('banner_button_link1'); ?>" class="banner-btn">
+                                
                                 <img src="<?php echo  get_template_directory_uri(); ?>/images/passport-icon.svg" alt="">
                                 <?php the_field('banner_button1'); ?>
                                 <!-- Apply Passport -->
                             </a>
-                            <a href="#" class="banner-btn">
+                            <a href="<?php the_field('banner_button_link2'); ?>" class="banner-btn">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/apply-visa.svg" alt="">
                                 <!-- Apply VISAS -->
+
                                  <?php the_field('banner_button2'); ?>
                             </a>
                         </div>
                     </div>
 
                     <div class="hero-pass">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/newo.png" alt="">
+                        <?php 
+                             $banner_image = get_field('banner_image')['url'];
+                        ?>
+                        <?php if($banner_image):?>
+                            <img src="<?php echo $banner_image ?>" alt="">
+                        <?php else: ?>
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/newo.png" alt="">
+                        <?php endif;?>
             </div>
     </div>
 
@@ -204,6 +217,7 @@
 
 
 
+       
         <div id="gallery-div">
             <div style="">
                 <span class="news-badge">
@@ -227,54 +241,48 @@
             
         
             <div id="box-main-container">
+                        <?php
+                        $post = -1; 
+                        $query = new WP_Query(
+                            ['post_type'=>'post',
+                            'posts_per_page'=>$post
+                            ]
+                        );
+                        $i=1;
+                        while($query->have_posts()){
+                            $query->the_post();
+                    ?>
+                    <div id="box1"
+                     class="news-card news-card-text"
+                      style="background-image: url('<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(), 'thumbnail')); ?>');
+                      ">
+                        <h3><?php the_title(); ?></h3>
+                        <p><?php the_content(); ?></p>
+                        <a href="<?php the_permalink(); ?>" class="know-more">
+                            Know More
+                            <img src="<?php echo get_template_directory_uri() ?>/images/arrow-right.svg" alt="">
+                        </a>
+                    </div>
+                    
+                    <?php $i++; ?>
 
-           <?php
-           
-           $query = new WP_Query(
-            ['post_type'=>'post',
-            'posts_per_page'=>3]
-           );
-           while($query->have_posts()){
-            $query->the_post();
-           ?>
-                <div id="box1" class="news-card news-card-text">
-                    <h3>
-                        <?php the_title() ?>
-                         
-                        <!-- Online Application -->
+                <?php } wp_reset_postdata(); ?>     
 
-                    </h3>
-                    <p>
+         
+            </div>
+            <br>
 
-                    <?php the_content(); ?>
-                        <!-- Extensive step-by-step instructions, information and application forms for all your US Passport and travel visa needs. -->
-                        </p>
-                    <a href="<?php the_permalink(); ?>" class="know-more">
-                        <?php echo get_field('card1')['button_text']; ?>
-                        Know More
-                         <?php 
-                            $icon  = get_field('card1')['icon']['url'];
-                            
-                         ?>
-                         <?php if($icon): ?>
+            
 
-                            <img src="<?php echo esc_url($icon) ?>" alt="">
-                          <?php else: ?> 
 
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/arrow-right.svg" alt="">
-
-                            <?php endif; ?>
-                    </a>
-                </div>
-<?php }?>
-    </div>
-    <br>
-    
             
         </div>
+    
+            
+    
 
-
-    <div id="testimonials" style="">
+        <div id="testimonials" style="">
+       
         <div>
             <span class="testimonial-badge">
                 <span class="badge-dot"></span>
@@ -314,6 +322,12 @@
         </div>
 
         <div id="cards-main-div">
+            <?php
+            
+                $comments = get_comments();
+                foreach($comments as $comment){
+                
+            ?>
                 <div id="card1">
                     <div id="card1-body">
                         <div id="card1-title">
@@ -321,22 +335,24 @@
                                 <img src="<?php echo get_template_directory_uri();  ?>/images/profile-pic.png" alt="">
                             </div>
                             <div id="card1-name">
-                                <label for="">Sophia</label>
-                                <label for="">Marketing Director</label>
+                                <label for=""><?php echo $comment->comment_author; ?></label>
+                                <!-- <label for="">Marketing Director</label> -->
                             </div>
                         </div>
                         <div id="card1-content">
                             <p>
-                            “Apply for your first passport with our expert assistance and complete the entire application process quickly and smoothly.”
+                                <?php echo $comment->comment_content; ?>
+                            <!-- “Apply for your first passport with our expert assistance and complete the entire application process quickly and smoothly.” -->
                             </p>
                         </div>
                         <div id="card1-rating">
                                 <label for="">4.5 <i class="bi bi-star-fill star"></i></label>
-                        </div>
+                        </div>  
                     </div>
                 </div>
+                <?php }?>
 
-                <div id="card2">
+                <!-- <div id="card2">
                     <div id="card2-body">
                         <div id="card2-title">
                             <div id="card2-img">
@@ -394,7 +410,7 @@
                             <label for="">4.5 <i class="bi bi-star-fill star"></i></label>
                         </div>
                     </div>
-                </div>
+                </div> -->
         </div>
 
     </div>
@@ -408,7 +424,7 @@
                             <span class="faq-badge">
                             <span class="badge-dot"></span>
                             <?php echo get_field('faq')['badge_title']; ?>
-                             <!-- F.A.Q -->
+                             
                             </span>
                     </div>
             </div>
@@ -513,6 +529,7 @@
 
 
 <?php get_footer(); ?>
+
 <script>
     
     $(document).ready(function(){
