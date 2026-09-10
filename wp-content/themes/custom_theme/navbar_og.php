@@ -14,7 +14,6 @@
         <li class="nav-item has-dropdown">
             <a href=""><?php echo get_field('nav_items')['nav_item1'] ?>
                 <img src="<?php echo get_template_directory_uri(); ?>/images/arrow-down.svg" alt="" class="nav-arrow">
-             
             </a>
         </li>
         <li class="nav-item has-dropdown">
@@ -30,8 +29,8 @@
         </li>
         <li class="nav-item has-dropdown">
            <a href="<?php echo get_field('nav_items')['nav_item5_link'] ?>"><?php echo get_field('nav_items')['nav_item5'] ?></a>
-           
         </li>
+        
         <li class="nav-item has-dropdown">
             <a href=""><?php echo get_field('nav_items')['nav_item6'] ?></a>
         </li>

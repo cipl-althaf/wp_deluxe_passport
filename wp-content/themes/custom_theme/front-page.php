@@ -242,39 +242,76 @@
         
             <div id="box-main-container">
                         <?php
-                        $post = -1; 
-                        $query = new WP_Query(
-                            ['post_type'=>'post',
-                            'posts_per_page'=>$post
-                            ]
-                        );
-                        $i=1;
-                        while($query->have_posts()){
-                            $query->the_post();
+
+                      global $wpdb;
+
+$results = $wpdb->get_results("
+    SELECT
+        p.ID,
+        p.post_author,
+        p.post_title,
+        p.post_content,
+        p.post_date,
+        c.comment_ID,
+        c.comment_author,
+        c.comment_content
+    FROM {$wpdb->posts} p
+    LEFT JOIN {$wpdb->comments} c
+    ON p.ID = c.comment_post_ID
+    WHERE p.post_type = 'post'
+    AND p.post_status = 'publish'
+    
+    
+    
+");
+
+foreach ($results as $row) {
+
+    
+
+    
+           
+
+            //    $post = -1; 
+            //             $query = new WP_Query(
+            //                 ['post_type'=>'post',
+            //                 'posts_per_page'=>$post
+            //                 ]
+            //             );
+
+            //             $i=1;
+            //             while($query->have_posts()){
+            //                 $query->the_post();
+                               
+            //                 $comments = get_comment(
+            //                     ['post_id'=>get_the_ID()]
+            //                 )
+                            
                     ?>
                     <div id="box1"
                      class="news-card news-card-text"
                       style="background-image: url('<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(), 'thumbnail')); ?>');
                       ">
-                        <h3><?php the_title(); ?></h3>
-                        <p><?php the_content(); ?></p>
-                        <a href="<?php the_permalink(); ?>" class="know-more">
+                      <h2><?php  echo $row->post_title; ?></h2>
+                        <h3><?php echo $row->post_content;?></h3>
+                        <h6><?php echo $row->post_date?></h6>
+                        <h6>Commented By - <?php echo $row->comment_author?> </h6>
+                        <a href="<?php echo get_permalink($row->ID) ?>">
                             Know More
-                            <img src="<?php echo get_template_directory_uri() ?>/images/arrow-right.svg" alt="">
-                        </a>
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/arrow-right.svg" alt="">
+                        </a>                     
+                        
                     </div>
                     
                     <?php $i++; ?>
 
-                <?php } wp_reset_postdata(); ?>     
-
-         
+                <?php
+}
+                //  } wp_reset_postdata(); 
+                 ?>     
+        
             </div>
             <br>
-
-            
-
-
             
         </div>
     
