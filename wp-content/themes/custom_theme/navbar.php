@@ -1,84 +1,84 @@
 <div class="header-section">
 
-    <ul style="display:flex;justify-content:space-between">
+    <!-- ========================= -->
+    <!-- LOGO -->
+    <!-- ========================= -->
 
-        <li>
-            <?php
-               $comp_logo = get_field('company_logo');
-            ?>
-
-            <?php if($comp_logo): ?>
-
-                <a href="">
-                    <img src="<?php echo $comp_logo['url']; ?>"
-                         alt=""
-                         width="100"
-                         height="100"
-                         style="margin-top:-35px;">
-                </a>
-
-            <?php endif;?>
-
-            <!-- <img src="<?php echo get_template_directory_uri(); ?>/images/Deluxe-logo.png" alt="company logo"> -->
-
-        </li>
-
-
-        <!-- ========================= -->
-        <!-- WORDPRESS MENU STARTS HERE -->
-        <!-- ========================= -->
+    <div class="logo-area">
 
         <?php
+        $comp_logo = get_field('company_logo');
+        ?>
 
+        <?php if ($comp_logo): ?>
+
+            <a href="<?php echo esc_url(home_url('/')); ?>">
+
+                <img
+                    src="<?php echo esc_url($comp_logo['url']); ?>"
+                    alt="<?php echo esc_attr($comp_logo['alt']); ?>"
+                    width="100"
+                    height="100"
+                    style="margin-top:-35px;"
+                >
+
+            </a>
+
+        <?php endif; ?>
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- WORDPRESS ADMIN MENU -->
+    <!-- ========================= -->
+
+    <nav class="menu-area">
+
+        <?php
         wp_nav_menu([
             'theme_location' => 'main-menu',
             'container'      => false,
-            'items_wrap'     => '%3$s'
+            'menu_class'     => 'main-menu',
+            'fallback_cb'    => false
         ]);
-
         ?>
 
-        <!-- ========================= -->
-        <!-- WORDPRESS MENU ENDS HERE -->
-        <!-- ========================= -->
+    </nav>
 
 
-        <li>
-            <a href="">
-                <span class="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/call-logo.svg" alt="">
-                    <?php the_field('nav_phone') ?>
-                </span>
+    <!-- ========================= -->
+    <!-- PHONE + LOGIN -->
+    <!-- ========================= -->
 
-                <span style="color:white">sdf</span>
-            </a>
+    <div class="right-area">
 
-            <span style="border-left:1px solid black;color:white">sdf</span>
+        <a href="tel:<?php the_field('nav_phone'); ?>" class="phone-link">
 
-            <button style="border:1px solid black;width:100px;height:30px;
-            border-radius:20px"
-            class="header-login">
+            <img
+                src="<?php echo get_template_directory_uri(); ?>/images/call-logo.svg"
+                alt="Phone"
+            >
 
-                <?php
-                    $avatar = get_field('nav_login_avatar');
-                ?>
+            <?php the_field('nav_phone'); ?>
 
-                <?php if($avatar):?>
+        </a>
 
-                    <!-- <img src="<?php echo esc_url($avatar['url']); ?>" alt=""> -->
 
-                <?php endif;?>
+        <span class="login-separator"></span>
 
-                <img src="<?php echo get_template_directory_uri(); ?>/images/boxicons_user-filled.svg" alt="">
 
-                <!-- Login -->
+        <button class="header-login">
 
-                <?php the_field('login_button_text'); ?>
+            <img
+                src="<?php echo get_template_directory_uri(); ?>/images/boxicons_user-filled.svg"
+                alt="User"
+            >
 
-            </button>
+            <?php the_field('login_button_text'); ?>
 
-        </li>
+        </button>
 
-    </ul>
+    </div>
 
 </div>

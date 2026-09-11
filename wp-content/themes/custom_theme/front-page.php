@@ -244,6 +244,7 @@
                         <?php
 
                       global $wpdb;
+                      
 
 $results = $wpdb->get_results("
     SELECT
@@ -294,8 +295,12 @@ foreach ($results as $row) {
                       ">
                       <h2><?php  echo $row->post_title; ?></h2>
                         <h3><?php echo $row->post_content;?></h3>
-                        <h6><?php echo $row->post_date?></h6>
-                        <h6>Commented By - <?php echo $row->comment_author?> </h6>
+                        <h6><?php echo $row->post_date; ?></h6>
+                        
+                        <br>
+                        <h6><b>Commented On This Post</b></h6>
+                        <h6><?php echo $row->comment_author ?></h6>
+                        <p><?php echo $row->comment_content; ?></p>
                         <a href="<?php echo get_permalink($row->ID) ?>">
                             Know More
                             <img src="<?php echo get_template_directory_uri(); ?>/images/arrow-right.svg" alt="">

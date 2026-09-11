@@ -30,23 +30,6 @@ function deluxe_passport_register_menus() {
 
 }
 
-function deluxe_use_classic_page_template($template){
-    if(is_page() && !is_front_page()){
-        $page_template = locate_template('page.php');
-        if($page_template){
-            return $page_template;
-        }
-
-    }
-        return $template; 
-}
-add_filter(
-    'template_include',
-    'deluxe_use_classic_page_template',
-    99
-);
-
-
 add_action('after_setup_theme', 'deluxe_passport_register_menus');
 
 add_action('after_setup_theme', 'custom_theme_register_menus');
